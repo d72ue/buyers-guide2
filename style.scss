@@ -84,10 +84,10 @@ h1 {
 }
 
 #home h1.site-name {
-  font-size: 72px;
+  font-size: 40px;
   line-height: 74px;
   font-weight: 700;
-  max-width: 600px;
+  max-width: 1000px;
   margin-top: 30px;
   margin-bottom: 20px;
   letter-spacing: -.03em;
@@ -120,11 +120,11 @@ p {
 }
 
 #home p.site-description {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 40px;
-  max-width: 620px;
-  margin-bottom: 120px;
+  line-height: 25px;
+  max-width: 800px;
+  margin-bottom: 30px;
   @include mobile {
     margin: 30px 20px 60px 20px;
   }
@@ -263,7 +263,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  font-size: 14px;
+  font-size: 20px;
   font-family: $helveticaNeue;
   
   @include mobile {

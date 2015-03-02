@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The buyer&#39;s guide</title>
+    <title>the buyer&#39;s guide</title>
     <description>This site provides service managers and other teams members with an explanation of what the Tax Platfrom can offer their service.</description>
     <link>http://d728ue.github.io</link>
     <atom:link href="http://d728ue.github.io/feed.xml" rel="self" type="application/rss+xml" />

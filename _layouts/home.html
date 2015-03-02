@@ -28,9 +28,20 @@
 
 
     <div class="container">
-      <h1 class="site-name"><a href="/">{{ site.name }}</a></h1>
+      <h1 class="site-name"><a href="/">The HMRC tax platform, {{ site.name }}</a></h1>
       <p class="site-description">{{ site.description }}</p>
-      <p> TESTING!!!!!!!</p>
+      <h2>So you’re buying some space on a platform eh?</h2>
+      <br></br>
+      <p class="site-description">If you are building and running a digital service it’s useful to think of a the tax platform like something that you might buy to make your life a bit easier. Rather than building a lot of infrastructure, tooling and services yourself you can buy some space on a shared platform that gives you a lot of what you need – that way you don’t have to build it yourself and you can focus on building an excellent service for your users, rather than what server configuration needs to be applied.</p>
+
+      <p class="site-description">There is a range of things that the tax platform offers a digital service that runs on it. The aim is for the tax platform to offer all services that run on it roughly the same things – what we might call the baseline offering.</p>
+
+      <p class="site-description">As a Digital Service Team you should be thinking about whether the tax platform meets your users needs and your own needs. If the baseline offering is not what you need then have two options; <p class="site-description"><b>a)</b> think about changing the tax platform to meet those needs or...</p> 
+      <p class="site-description"><b> b)</b> Think about using a different platform altogether. (Heroku is often used for prototyping in addition to the Tax Platfrom)</p>
+
+      <p class="site-description">Only you, as a digital service team, can know if the tax platform meets your and your users needs. On the tax platform team we’ve tried to make a service that meets the most common needs we’ve seen from our users (the digital service teams).</p>
+
+      <p class="site-description">As you consider the baseline, you need to think to yourself whether it offers what your team and your users need. If it doesn’t then you need to get in touch and see what we can do about it. </p>
     </div>
 
     <div id="main" role="main" class="container">
@@ -39,7 +50,7 @@
 
     </div><!-- /content-wrapper -->
 
-    {% include footer.html %}
+    {{ footer.html }}
 
     {% include analytics.html %}
   </body>
