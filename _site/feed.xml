@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>jekyll-grid</title>
-    <description>A jekyll theme ideal for showcasing projects</description>
-    <link>http://femmebot.github.io</link>
-    <atom:link href="http://femmebot.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <title>The buyer&#39;s guide</title>
+    <description>This site provides service managers and other teams members with an explanation of what the Tax Platfrom can offer their service.</description>
+    <link>http://d728ue.github.io</link>
+    <atom:link href="http://d728ue.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Mollis Offendit In Mea</title>
@@ -32,9 +32,9 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
-        <link>http://femmebot.github.io/Mollis-offendit-in-mea/</link>
-        <guid isPermaLink="true">http://femmebot.github.io/Mollis-offendit-in-mea/</guid>
+        <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+        <link>http://d728ue.github.io/Mollis-offendit-in-mea/</link>
+        <guid isPermaLink="true">http://d728ue.github.io/Mollis-offendit-in-mea/</guid>
       </item>
     
       <item>
@@ -63,9 +63,9 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
-        <link>http://femmebot.github.io/Lorem-Ipsum-Dolor/</link>
-        <guid isPermaLink="true">http://femmebot.github.io/Lorem-Ipsum-Dolor/</guid>
+        <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+        <link>http://d728ue.github.io/Lorem-Ipsum-Dolor/</link>
+        <guid isPermaLink="true">http://d728ue.github.io/Lorem-Ipsum-Dolor/</guid>
       </item>
     
       <item>
@@ -94,9 +94,9 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Sat, 01 Feb 2014 00:00:00 -0500</pubDate>
-        <link>http://femmebot.github.io/Another-Project-Title/</link>
-        <guid isPermaLink="true">http://femmebot.github.io/Another-Project-Title/</guid>
+        <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
+        <link>http://d728ue.github.io/Another-Project-Title/</link>
+        <guid isPermaLink="true">http://d728ue.github.io/Another-Project-Title/</guid>
       </item>
     
       <item>
@@ -125,9 +125,9 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Wed, 01 Jan 2014 00:00:00 -0500</pubDate>
-        <link>http://femmebot.github.io/Hello-World/</link>
-        <guid isPermaLink="true">http://femmebot.github.io/Hello-World/</guid>
+        <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+        <link>http://d728ue.github.io/Hello-World/</link>
+        <guid isPermaLink="true">http://d728ue.github.io/Hello-World/</guid>
       </item>
     
   </channel>
