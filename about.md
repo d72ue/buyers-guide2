@@ -6,15 +6,16 @@ permalink: /about/
 
 
 
-## Set up instructions
+## For more information about the HMRC Tax Platform or the buyer's guide please contact....
 
-Fork this Jekyll-Grid on Github: [https://github.com/femmebot/jekyll-grid](https://github.com/femmebot/jekyll-grid)
+Kalbir Sohi
 
-Part of the [25x52](http://25x52.com) initiative, this theme is based on [Jekyll Now](https://github.com/barryclark/jekyll-now). Refer to the following original instructions for help with the setup:
+* <kalbir.sohi@digital.hmrc.gov.uk>
+* 07717587266
 
-> Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
+Tim Britten
 
-> ![_config.yml]({{ site.baseurl }}/images/config.png)
+* <tim.britten@digital.hmrc.gov.uk>
+* 07767004547
 
-> The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
 

@@ -41,6 +41,12 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
         <title>Alpha assessment</title>
         <description>&lt;p&gt;This page should outline what the platform offers for those services who are entering thier Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.&lt;/p&gt;
 
+&lt;h3 id=&quot;infrastructure-overview&quot;&gt;Infrastructure overview&lt;/h3&gt;
+
+&lt;p&gt;The taxplatform is currently hosted on a Gcloud infrastructure provider. This allows us to create and scale infrastructure how and when we want to without the long lead times and expense normally associated with physical infrastructure. This infrastruture is built and supported by a central web-operations team in London. &lt;/p&gt;
+
+&lt;p&gt;There are two main infrastructure areas to the tax platform, the internet facing area where we host front-end applications which only deal with transient customer data. The second area is the PSN facing area which is a more secure area which talks to the HMRC head of duty systems and stores some customer data. The seperation of these two areas allow us to keep our customers data secure as well as talking to customers over the internet. These two areas are joined by a secure accredited bridge. &lt;/p&gt;
+
 &lt;h3 id=&quot;testing-and-development&quot;&gt;Testing and development&lt;/h3&gt;
 
 &lt;p&gt;At this stage the tax platform gives you a number of environments to play with, each offering different benefits.&lt;/p&gt;
@@ -119,14 +125,20 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 
 &lt;p&gt;During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endevour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the &lt;a href=&quot;https://groups.google.com/a/digital.hmrc.gov.uk/forum/#!forum/ddc-tax-plat-live-ops-announcements&quot;&gt;live service announcements email&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;h4-heading-looks-like-this&quot;&gt;H4 Heading Looks Like This&lt;/h4&gt;
+&lt;h3 id=&quot;customer-support&quot;&gt;Customer Support&lt;/h3&gt;
 
-&lt;p&gt;Corned beef pig pancetta drumstick tail, andouille spare ribs jowl prosciutto biltong hamburger short loin pork brisket. Frankfurter kielbasa brisket meatloaf pastrami fatback. Cow t-bone pork chop chuck short ribs spare ribs. Pancetta flank porchetta, turkey tail ball tip tri-tip leberkas beef.&lt;/p&gt;
+&lt;p&gt;The tax platform also comes with its own customer support service. This is built using a tool called Deskpro. It allows customers to submit support requests as well as feedback. These tickets are then responded to by a tax platform customer support team and supporting expert tax teams. The responses are delivered by email. &lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;This is a sample blockquote. Landjaeger shoulder ham capicola. 
-Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon kevin turducken spare ribs sirloin short ribs ham hock.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The tools team in London look after this service and can assist you in understanding how to get the most out of the support model. Contacts can be found below:   &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#110;&amp;#100;&amp;#114;&amp;#101;&amp;#119;&amp;#046;&amp;#115;&amp;#104;&amp;#101;&amp;#112;&amp;#112;&amp;#097;&amp;#114;&amp;#100;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#097;&amp;#110;&amp;#100;&amp;#114;&amp;#101;&amp;#119;&amp;#046;&amp;#115;&amp;#104;&amp;#101;&amp;#112;&amp;#112;&amp;#097;&amp;#114;&amp;#100;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt; 07979707726&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#097;&amp;#110;&amp;#100;&amp;#101;&amp;#114;&amp;#046;&amp;#098;&amp;#114;&amp;#111;&amp;#119;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#097;&amp;#110;&amp;#100;&amp;#101;&amp;#114;&amp;#046;&amp;#098;&amp;#114;&amp;#111;&amp;#119;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt; 07500789508&lt;/p&gt;
+
+&lt;h4 id=&quot;remember-if-you-have-a-need-that-they-platfrom-currently-doesnt-meet-please-get-in-touch&quot;&gt;Remember, if you have a need that they platfrom currently doesn’t meet please get in touch…&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#107;&amp;#097;&amp;#108;&amp;#098;&amp;#105;&amp;#114;&amp;#046;&amp;#115;&amp;#111;&amp;#104;&amp;#105;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#107;&amp;#097;&amp;#108;&amp;#098;&amp;#105;&amp;#114;&amp;#046;&amp;#115;&amp;#111;&amp;#104;&amp;#105;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 01 Apr 2014 00:00:00 +0100</pubDate>

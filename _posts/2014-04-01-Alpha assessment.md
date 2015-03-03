@@ -12,6 +12,13 @@ proj-num: 04
 
 This page should outline what the platform offers for those services who are entering thier Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.
 
+### Infrastructure overview
+
+The taxplatform is currently hosted on a Gcloud infrastructure provider. This allows us to create and scale infrastructure how and when we want to without the long lead times and expense normally associated with physical infrastructure. This infrastruture is built and supported by a central web-operations team in London. 
+
+There are two main infrastructure areas to the tax platform, the internet facing area where we host front-end applications which only deal with transient customer data. The second area is the PSN facing area which is a more secure area which talks to the HMRC head of duty systems and stores some customer data. The seperation of these two areas allow us to keep our customers data secure as well as talking to customers over the internet. These two areas are joined by a secure accredited bridge. 
+
+
 ### Testing and development 
 
 At this stage the tax platform gives you a number of environments to play with, each offering different benefits.
@@ -65,18 +72,23 @@ Once you have deployed onto the tax platform and you have your monitoring set up
 
 During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endevour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the [live service announcements email][announcements].
 
+### Customer Support
+
+The tax platform also comes with its own customer support service. This is built using a tool called Deskpro. It allows customers to submit support requests as well as feedback. These tickets are then responded to by a tax platform customer support team and supporting expert tax teams. The responses are delivered by email. 
+
+The tools team in London look after this service and can assist you in understanding how to get the most out of the support model. Contacts can be found below:   
+  
+  <andrew.sheppard@digital.hmrc.gov.uk> 07979707726
+
+  <alexander.brown@digital.hmrc.gov.uk> 07500789508
+
+#### Remember, if you have a need that they platfrom currently doesn't meet please get in touch...
+<tim.britten@digital.hmrc.gov.uk>
+
+<kalbir.sohi@digital.hmrc.gov.uk>
 
 
 
-
-
-
-#### H4 Heading Looks Like This
-
-Corned beef pig pancetta drumstick tail, andouille spare ribs jowl prosciutto biltong hamburger short loin pork brisket. Frankfurter kielbasa brisket meatloaf pastrami fatback. Cow t-bone pork chop chuck short ribs spare ribs. Pancetta flank porchetta, turkey tail ball tip tri-tip leberkas beef.
-
-> This is a sample blockquote. Landjaeger shoulder ham capicola. 
-> Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon kevin turducken spare ribs sirloin short ribs ham hock.
 
 
 [development environment]:      https://confluence.tools.tax.service.gov.uk/display/DTRG/05+Deploying+to+Dev
