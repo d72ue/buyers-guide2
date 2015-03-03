@@ -57,7 +57,7 @@ The tax platform provides a number of tools and mechanisms that your service can
 * Transaction monitoring
 	* Splunk is used to record and interogate specific business events. It is stored in a more secure area of the tax platform (PSN facing) so that this data can contain information specific to customers. This can be used by enforcement and compliance and other business areas to understand customer behaviour. 
 
-Web-ops use these same tools to monitor the infrastructure that your service. 
+Web-ops use these same tools to monitor the platform infrastructure as your team use to monitor your service. 
 
 ### Incident response
 
