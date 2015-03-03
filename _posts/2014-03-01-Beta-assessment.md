@@ -2,7 +2,7 @@
 layout: post
 title: Beta assessment
 desc: This is for services which are in their private beta and want to move into public beta.
-proj-url: https://github.io/buyers-guide2
+proj-url: https://confluence.tools.tax.service.gov.uk/display/DP/Beta+Development
 proj-num: 04
 ---
 
@@ -10,7 +10,7 @@ proj-num: 04
 
 ## Beta assessment
 
-Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. 
+The move from Alpha phase to Beta phase in HMRC has traditionally been a move from a small private Beta to a public Beta where the number of customers able to use the service is not artifically controlled. If your transition does not fit this model then I suggest that you read the buyers guide introduction to [Alpha assessment][alpha assessment]
 
 ### Testing and development 
 
@@ -22,3 +22,8 @@ Corned beef pig pancetta drumstick tail, andouille spare ribs jowl prosciutto bi
 > This is a sample blockquote. Landjaeger shoulder ham capicola. 
 > Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon kevin turducken spare ribs sirloin short ribs ham hock.
 
+
+
+
+
+[alpha assessment]:			/buyers-guide2/Alpha%20assessment/

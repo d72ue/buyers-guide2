@@ -39,13 +39,13 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
     
       <item>
         <title>Alpha assessment</title>
-        <description>&lt;p&gt;This page should outline what the platform offers for those services who are entering thier Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.&lt;/p&gt;
+        <description>&lt;p&gt;This page should outline what the platform offers for those services who are entering their Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.&lt;/p&gt;
 
 &lt;h3 id=&quot;infrastructure-overview&quot;&gt;Infrastructure overview&lt;/h3&gt;
 
-&lt;p&gt;The taxplatform is currently hosted on a Gcloud infrastructure provider. This allows us to create and scale infrastructure how and when we want to without the long lead times and expense normally associated with physical infrastructure. This infrastruture is built and supported by a central web-operations team in London. &lt;/p&gt;
+&lt;p&gt;The tax platform is currently hosted on a GCloud infrastructure provider. This allows us to create and scale infrastructure how and when we want to without the long lead times and expense normally associated with physical infrastructure. This infrastructure is built and supported by a central web-operations team in London. &lt;/p&gt;
 
-&lt;p&gt;There are two main infrastructure areas to the tax platform, the internet facing area where we host front-end applications which only deal with transient customer data. The second area is the PSN facing area which is a more secure area which talks to the HMRC head of duty systems and stores some customer data. The seperation of these two areas allow us to keep our customers data secure as well as talking to customers over the internet. These two areas are joined by a secure accredited bridge. &lt;/p&gt;
+&lt;p&gt;There are two main infrastructure areas to the tax platform, the Internet facing area where we host front-end applications which only deal with transient customer data. The second area is the PSN facing area which is a more secure area which talks to the HMRC head of duty systems and stores some customer data. The separation of these two areas allow us to keep our customers data secure as well as talking to customers over the Internet. These two areas are joined by a secure accredited bridge. &lt;/p&gt;
 
 &lt;h3 id=&quot;testing-and-development&quot;&gt;Testing and development&lt;/h3&gt;
 
@@ -54,13 +54,13 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 &lt;ul&gt;
   &lt;li&gt;A &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/DTRG/05+Deploying+to+Dev&quot;&gt;development environment&lt;/a&gt; 
     &lt;ul&gt;
-      &lt;li&gt;This will allow your developers to push their working code to an environment representative of the real world. The Development environment will contain up to date microservices from other teams, test instances of the Aspire head of duty systems, as well as government gateway and IDA. &lt;/li&gt;
+      &lt;li&gt;This will allow your developers to push their working code to an environment representative of the real world. The Development environment will contain up to date micro services from other teams, test instances of the Aspire head of duty systems, as well as government gateway and IDA. &lt;/li&gt;
       &lt;li&gt;You can deploy to this environment whenever you like.   &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;A &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/DTRG/10+Deploying+to+Web-QA&quot;&gt;QA environment&lt;/a&gt; 
+  &lt;li&gt;A &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/DTRG/10+Deploying+to+Web-QA&quot;&gt;QA environmentt&lt;/a&gt; 
     &lt;ul&gt;
-      &lt;li&gt;This is where your developers can push code ready for functional testing by your QA. This also has test instances of IDA, government gateway and the aspire back-end head of duty systems. You must test sucessfully here to progress to production. &lt;/li&gt;
+      &lt;li&gt;This is where your developers can push code ready for functional testing by your QA. This also has test instances of IDA, government gateway and the aspire back-end head of duty systems. You must test successfully here to progress to production. &lt;/li&gt;
       &lt;li&gt;You can deploy to this environment whenever you like.   &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -76,43 +76,43 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases&quot;&gt;Production deployments&lt;/a&gt;
     &lt;ul&gt;
-      &lt;li&gt;This is the customer facing tax platfrom! At this stage this environment can be used to run a small private beta. There are a number of prerequisites before you are allowed to go into this environment. It’s worth reading the &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases&quot;&gt;step by step guide to production releases&lt;/a&gt; now. Once you have met all these prerequisites you can deploy to production. &lt;/li&gt;
+      &lt;li&gt;This is the customer facing tax platform! At this stage this environment can be used to run a small private beta. There are a number of prerequisites before you are allowed to go into this environment. It’s worth reading the &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases&quot;&gt;step by step guide to production releases&lt;/a&gt; now. Once you have met all these prerequisites you can deploy to production. &lt;/li&gt;
       &lt;li&gt;For your initial deployment it’s best to raise a PRODREL ticket in Jira as a placeholder as soon as possible (you can’t be too early!). After this initial deployment you can use the &lt;a href=&quot;https://releaseform.tax.service.gov.uk/&quot;&gt;release form&lt;/a&gt; which will allow you to release with 48 hours notice.&lt;/li&gt;
-      &lt;li&gt;Don’t forget that you will have to go through a &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/DTRG/Platform+Readiness+Assessment&quot;&gt;performance readiness review&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;Don’t forget that you will have to go through a &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/DTRG/Platform+Readiness+Assessment&quot;&gt;performance readiness revieww&lt;/a&gt;.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;security&quot;&gt;Security&lt;/h3&gt;
-&lt;p&gt;While it will be your responsibility as a team to get your service accredited through the standard RMAD process the tax platform is regularly penetration tested and its acrreditation updated. This means if you only have to worry about your application and not about the infrastructure that your service runs on. There are number of proactive security measures we take as a platform team to ensure the protection of our customers.&lt;/p&gt;
+&lt;p&gt;While it will be your responsibility as a team to get your service accredited through the standard RMAD process the tax platform is regularly penetration tested and its accreditation updated. This means if you only have to worry about your application and not about the infrastructure that your service runs on. There are number of proactive security measures we take as a platform team to ensure the protection of our customers.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The platform infrastrcuture is penetration tested every 6 months or upon any architectual change outside the scope of the existing RMADS&lt;/li&gt;
+  &lt;li&gt;The platform infrastructure is penetration tested every 6 months or upon any architectural change outside the scope of the existing RMADS&lt;/li&gt;
   &lt;li&gt;The platform RMADS are updated every 6 months or upon any functional change which would affect security &lt;/li&gt;
   &lt;li&gt;Akamai is in place to provide DDOS protection.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;monitoring&quot;&gt;Monitoring&lt;/h3&gt;
 
-&lt;p&gt;The tax platform provides a number of tools and mechanisms that your service can use to monitor your service. These tools range from monitoring performance or customer satisfaction to loggin internal audit events for fraud prevention. Some of these services are free to use if you wish, others we insist on in order to enable us support your service in live. &lt;/p&gt;
+&lt;p&gt;The tax platform provides a number of tools and mechanisms that your service can use to monitor your service. These tools range from monitoring performance or customer satisfaction to login internal audit events for fraud prevention. Some of these services are free to use if you wish, others we insist on in order to enable us support your service in live. &lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Analytics
     &lt;ul&gt;
-      &lt;li&gt;Google analytics is our primary analytics tools and will tell you much about customer behaviour on your service. &lt;/li&gt;
+      &lt;li&gt;Google analytics is our primary analytics tools and will tell you much about customer behavior on your service. &lt;/li&gt;
       &lt;li&gt;Deskpro, if used to support your pages, will show you which pages are generating the most support tickets, the nature of these tickets and how quickly they are being resolved.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Incident Monitoring&lt;/em&gt;
     &lt;ul&gt;
       &lt;li&gt;Kibana is used to log application audit events and we reply on the team to define what is important.  &lt;/li&gt;
-      &lt;li&gt;Sensu alerts can then be set up from the kibana logs to alert the service team and the web-ops team when services are behaving abnormally. &lt;/li&gt;
+      &lt;li&gt;Sensu alerts can then be set up from the Kibana logs to alert the service team and the web-ops team when services are behaving abnormally. &lt;/li&gt;
       &lt;li&gt;Pagerduty is used to alert the out of hours support team (2 members of web-ops) if anything unusual is happening outside of office hours.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Transaction monitoring
     &lt;ul&gt;
-      &lt;li&gt;Splunk is used to record and interogate specific business events. It is stored in a more secure area of the tax platform (PSN facing) so that this data can contain information specific to customers. This can be used by enforcement and compliance and other business areas to understand customer behaviour. &lt;/li&gt;
+      &lt;li&gt;Splunk is used to record and interrogate specific business events. It is stored in a more secure area of the tax platform (PSN facing) so that this data can contain information specific to customers. This can be used by enforcement and compliance and other business areas to understand customer behavior. &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -121,9 +121,9 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 
 &lt;h3 id=&quot;incident-response&quot;&gt;Incident response&lt;/h3&gt;
 
-&lt;p&gt;Once you have deployed onto the tax platform and you have your monitoring set up your service will be supported both in and out of hours by the web-operations team. We supply a dedicated engineer and on-call service manager 24/7/365 who will respond to any monitoring alerts of esculation from customer support. &lt;/p&gt;
+&lt;p&gt;Once you have deployed onto the tax platform and you have your monitoring set up your service will be supported both in and out of hours by the web-operations team. We supply a dedicated engineer and on-call service manager 24/7/365 who will respond to any monitoring alerts of escalation from customer support. &lt;/p&gt;
 
-&lt;p&gt;During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endevour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the &lt;a href=&quot;https://groups.google.com/a/digital.hmrc.gov.uk/forum/#!forum/ddc-tax-plat-live-ops-announcements&quot;&gt;live service announcements email&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endeavour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the &lt;a href=&quot;https://groups.google.com/a/digital.hmrc.gov.uk/forum/#!forum/ddc-tax-plat-live-ops-announcements&quot;&gt;live service announcements email&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;customer-support&quot;&gt;Customer Support&lt;/h3&gt;
 
@@ -135,7 +135,15 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 
 &lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#097;&amp;#110;&amp;#100;&amp;#101;&amp;#114;&amp;#046;&amp;#098;&amp;#114;&amp;#111;&amp;#119;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#097;&amp;#110;&amp;#100;&amp;#101;&amp;#114;&amp;#046;&amp;#098;&amp;#114;&amp;#111;&amp;#119;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt; 07500789508&lt;/p&gt;
 
-&lt;h4 id=&quot;remember-if-you-have-a-need-that-they-platfrom-currently-doesnt-meet-please-get-in-touch&quot;&gt;Remember, if you have a need that they platfrom currently doesn’t meet please get in touch…&lt;/h4&gt;
+&lt;h3 id=&quot;disaster-recovery&quot;&gt;Disaster recovery&lt;/h3&gt;
+
+&lt;p&gt;There are different levels of resilience built into the tax platform which provide resilience against disaster and fairly rapid disaster recovery. These levels are outlined below:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Data centre&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;remember-if-you-have-a-need-that-they-platform-currently-doesnt-meet-please-get-in-touch&quot;&gt;Remember, if you have a need that they platform currently doesn’t meet please get in touch…&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#107;&amp;#097;&amp;#108;&amp;#098;&amp;#105;&amp;#114;&amp;#046;&amp;#115;&amp;#111;&amp;#104;&amp;#105;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#107;&amp;#097;&amp;#108;&amp;#098;&amp;#105;&amp;#114;&amp;#046;&amp;#115;&amp;#111;&amp;#104;&amp;#105;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt;&lt;/p&gt;
@@ -150,7 +158,7 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
         <title>Beta assessment</title>
         <description>&lt;h2 id=&quot;beta-assessment&quot;&gt;Beta assessment&lt;/h2&gt;
 
-&lt;p&gt;Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. &lt;/p&gt;
+&lt;p&gt;The move from Alpha phase to Beta phase in HMRC has traditionally been a move from a small private Beta to a public Beta where the number of customers able to use the service is not artifically controlled. If your transition does not fit this model then I suggest that you read the buyers guide introduction to &lt;a href=&quot;/buyers-guide2/Alpha%20assessment/&quot;&gt;Alpha assessment&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;testing-and-development&quot;&gt;Testing and development&lt;/h3&gt;
 

@@ -44,13 +44,13 @@
 
 
   <div class="entry">
-    <p>This page should outline what the platform offers for those services who are entering thier Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.</p>
+    <p>This page should outline what the platform offers for those services who are entering their Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.</p>
 
 <h3 id="infrastructure-overview">Infrastructure overview</h3>
 
-<p>The taxplatform is currently hosted on a Gcloud infrastructure provider. This allows us to create and scale infrastructure how and when we want to without the long lead times and expense normally associated with physical infrastructure. This infrastruture is built and supported by a central web-operations team in London. </p>
+<p>The tax platform is currently hosted on a GCloud infrastructure provider. This allows us to create and scale infrastructure how and when we want to without the long lead times and expense normally associated with physical infrastructure. This infrastructure is built and supported by a central web-operations team in London. </p>
 
-<p>There are two main infrastructure areas to the tax platform, the internet facing area where we host front-end applications which only deal with transient customer data. The second area is the PSN facing area which is a more secure area which talks to the HMRC head of duty systems and stores some customer data. The seperation of these two areas allow us to keep our customers data secure as well as talking to customers over the internet. These two areas are joined by a secure accredited bridge. </p>
+<p>There are two main infrastructure areas to the tax platform, the Internet facing area where we host front-end applications which only deal with transient customer data. The second area is the PSN facing area which is a more secure area which talks to the HMRC head of duty systems and stores some customer data. The separation of these two areas allow us to keep our customers data secure as well as talking to customers over the Internet. These two areas are joined by a secure accredited bridge. </p>
 
 <h3 id="testing-and-development">Testing and development</h3>
 
@@ -59,13 +59,13 @@
 <ul>
   <li>A <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/05+Deploying+to+Dev">development environment</a> 
     <ul>
-      <li>This will allow your developers to push their working code to an environment representative of the real world. The Development environment will contain up to date microservices from other teams, test instances of the Aspire head of duty systems, as well as government gateway and IDA. </li>
+      <li>This will allow your developers to push their working code to an environment representative of the real world. The Development environment will contain up to date micro services from other teams, test instances of the Aspire head of duty systems, as well as government gateway and IDA. </li>
       <li>You can deploy to this environment whenever you like.   </li>
     </ul>
   </li>
-  <li>A <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/10+Deploying+to+Web-QA">QA environment</a> 
+  <li>A <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/10+Deploying+to+Web-QA">QA environmentt</a> 
     <ul>
-      <li>This is where your developers can push code ready for functional testing by your QA. This also has test instances of IDA, government gateway and the aspire back-end head of duty systems. You must test sucessfully here to progress to production. </li>
+      <li>This is where your developers can push code ready for functional testing by your QA. This also has test instances of IDA, government gateway and the aspire back-end head of duty systems. You must test successfully here to progress to production. </li>
       <li>You can deploy to this environment whenever you like.   </li>
     </ul>
   </li>
@@ -81,43 +81,43 @@
 <ul>
   <li><a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">Production deployments</a>
     <ul>
-      <li>This is the customer facing tax platfrom! At this stage this environment can be used to run a small private beta. There are a number of prerequisites before you are allowed to go into this environment. It’s worth reading the <a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">step by step guide to production releases</a> now. Once you have met all these prerequisites you can deploy to production. </li>
+      <li>This is the customer facing tax platform! At this stage this environment can be used to run a small private beta. There are a number of prerequisites before you are allowed to go into this environment. It’s worth reading the <a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">step by step guide to production releases</a> now. Once you have met all these prerequisites you can deploy to production. </li>
       <li>For your initial deployment it’s best to raise a PRODREL ticket in Jira as a placeholder as soon as possible (you can’t be too early!). After this initial deployment you can use the <a href="https://releaseform.tax.service.gov.uk/">release form</a> which will allow you to release with 48 hours notice.</li>
-      <li>Don’t forget that you will have to go through a <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/Platform+Readiness+Assessment">performance readiness review</a>.</li>
+      <li>Don’t forget that you will have to go through a <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/Platform+Readiness+Assessment">performance readiness revieww</a>.</li>
     </ul>
   </li>
 </ul>
 
 <h3 id="security">Security</h3>
-<p>While it will be your responsibility as a team to get your service accredited through the standard RMAD process the tax platform is regularly penetration tested and its acrreditation updated. This means if you only have to worry about your application and not about the infrastructure that your service runs on. There are number of proactive security measures we take as a platform team to ensure the protection of our customers.</p>
+<p>While it will be your responsibility as a team to get your service accredited through the standard RMAD process the tax platform is regularly penetration tested and its accreditation updated. This means if you only have to worry about your application and not about the infrastructure that your service runs on. There are number of proactive security measures we take as a platform team to ensure the protection of our customers.</p>
 
 <ul>
-  <li>The platform infrastrcuture is penetration tested every 6 months or upon any architectual change outside the scope of the existing RMADS</li>
+  <li>The platform infrastructure is penetration tested every 6 months or upon any architectural change outside the scope of the existing RMADS</li>
   <li>The platform RMADS are updated every 6 months or upon any functional change which would affect security </li>
   <li>Akamai is in place to provide DDOS protection.</li>
 </ul>
 
 <h3 id="monitoring">Monitoring</h3>
 
-<p>The tax platform provides a number of tools and mechanisms that your service can use to monitor your service. These tools range from monitoring performance or customer satisfaction to loggin internal audit events for fraud prevention. Some of these services are free to use if you wish, others we insist on in order to enable us support your service in live. </p>
+<p>The tax platform provides a number of tools and mechanisms that your service can use to monitor your service. These tools range from monitoring performance or customer satisfaction to login internal audit events for fraud prevention. Some of these services are free to use if you wish, others we insist on in order to enable us support your service in live. </p>
 
 <ul>
   <li>Analytics
     <ul>
-      <li>Google analytics is our primary analytics tools and will tell you much about customer behaviour on your service. </li>
+      <li>Google analytics is our primary analytics tools and will tell you much about customer behavior on your service. </li>
       <li>Deskpro, if used to support your pages, will show you which pages are generating the most support tickets, the nature of these tickets and how quickly they are being resolved.</li>
     </ul>
   </li>
   <li><em>Incident Monitoring</em>
     <ul>
       <li>Kibana is used to log application audit events and we reply on the team to define what is important.  </li>
-      <li>Sensu alerts can then be set up from the kibana logs to alert the service team and the web-ops team when services are behaving abnormally. </li>
+      <li>Sensu alerts can then be set up from the Kibana logs to alert the service team and the web-ops team when services are behaving abnormally. </li>
       <li>Pagerduty is used to alert the out of hours support team (2 members of web-ops) if anything unusual is happening outside of office hours.</li>
     </ul>
   </li>
   <li>Transaction monitoring
     <ul>
-      <li>Splunk is used to record and interogate specific business events. It is stored in a more secure area of the tax platform (PSN facing) so that this data can contain information specific to customers. This can be used by enforcement and compliance and other business areas to understand customer behaviour. </li>
+      <li>Splunk is used to record and interrogate specific business events. It is stored in a more secure area of the tax platform (PSN facing) so that this data can contain information specific to customers. This can be used by enforcement and compliance and other business areas to understand customer behavior. </li>
     </ul>
   </li>
 </ul>
@@ -126,9 +126,9 @@
 
 <h3 id="incident-response">Incident response</h3>
 
-<p>Once you have deployed onto the tax platform and you have your monitoring set up your service will be supported both in and out of hours by the web-operations team. We supply a dedicated engineer and on-call service manager 24/7/365 who will respond to any monitoring alerts of esculation from customer support. </p>
+<p>Once you have deployed onto the tax platform and you have your monitoring set up your service will be supported both in and out of hours by the web-operations team. We supply a dedicated engineer and on-call service manager 24/7/365 who will respond to any monitoring alerts of escalation from customer support. </p>
 
-<p>During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endevour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the <a href="https://groups.google.com/a/digital.hmrc.gov.uk/forum/#!forum/ddc-tax-plat-live-ops-announcements">live service announcements email</a>.</p>
+<p>During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endeavour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the <a href="https://groups.google.com/a/digital.hmrc.gov.uk/forum/#!forum/ddc-tax-plat-live-ops-announcements">live service announcements email</a>.</p>
 
 <h3 id="customer-support">Customer Support</h3>
 
@@ -140,7 +140,15 @@
 
 <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#108;&#101;&#120;&#097;&#110;&#100;&#101;&#114;&#046;&#098;&#114;&#111;&#119;&#110;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">&#097;&#108;&#101;&#120;&#097;&#110;&#100;&#101;&#114;&#046;&#098;&#114;&#111;&#119;&#110;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;</a> 07500789508</p>
 
-<h4 id="remember-if-you-have-a-need-that-they-platfrom-currently-doesnt-meet-please-get-in-touch">Remember, if you have a need that they platfrom currently doesn’t meet please get in touch…</h4>
+<h3 id="disaster-recovery">Disaster recovery</h3>
+
+<p>There are different levels of resilience built into the tax platform which provide resilience against disaster and fairly rapid disaster recovery. These levels are outlined below:</p>
+
+<ul>
+  <li>Data centre</li>
+</ul>
+
+<h4 id="remember-if-you-have-a-need-that-they-platform-currently-doesnt-meet-please-get-in-touch">Remember, if you have a need that they platform currently doesn’t meet please get in touch…</h4>
 <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#116;&#105;&#109;&#046;&#098;&#114;&#105;&#116;&#116;&#101;&#110;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">&#116;&#105;&#109;&#046;&#098;&#114;&#105;&#116;&#116;&#101;&#110;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;</a></p>
 
 <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#107;&#097;&#108;&#098;&#105;&#114;&#046;&#115;&#111;&#104;&#105;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">&#107;&#097;&#108;&#098;&#105;&#114;&#046;&#115;&#111;&#104;&#105;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;</a></p>
