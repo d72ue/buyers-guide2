@@ -7,7 +7,7 @@
     <atom:link href="http://d728ue.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Mollis Offendit In Mea</title>
+        <title>Before you start...</title>
         <description>&lt;h2 id=&quot;h2-heading-looks-like-this&quot;&gt;H2 Heading Looks Like This&lt;/h2&gt;
 
 &lt;p&gt;Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. &lt;/p&gt;
@@ -32,25 +32,31 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
-        <link>http://d728ue.github.io/Mollis-offendit-in-mea/</link>
-        <guid isPermaLink="true">http://d728ue.github.io/Mollis-offendit-in-mea/</guid>
+        <pubDate>Thu, 01 May 2014 00:00:00 +0100</pubDate>
+        <link>http://d728ue.github.io/Before-you-start/</link>
+        <guid isPermaLink="true">http://d728ue.github.io/Before-you-start/</guid>
       </item>
     
       <item>
-        <title>Lorem Ipsum Quid Nostrud</title>
-        <description>&lt;h2 id=&quot;h2-heading-looks-like-this&quot;&gt;H2 Heading Looks Like This&lt;/h2&gt;
+        <title>Alpha assessment</title>
+        <description>&lt;h2 id=&quot;h2-alpha-assessment&quot;&gt;H2 Alpha assessment&lt;/h2&gt;
 
-&lt;p&gt;Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. &lt;/p&gt;
+&lt;p&gt;This page should outline what the platform offers for those services who are entering thier Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.&lt;/p&gt;
 
-&lt;h3 id=&quot;h3-heading-looks-like-this&quot;&gt;H3 Heading Looks Like This&lt;/h3&gt;
+&lt;h3 id=&quot;testing-and-development&quot;&gt;Testing and development&lt;/h3&gt;
 
-&lt;p&gt;Spare ribs strip steak pastrami corned beef bresaola porchetta. Cow fatback tongue prosciutto, short ribs hamburger drumstick beef ribs swine t-bone pancetta meatball strip steak ground round tenderloin.&lt;/p&gt;
+&lt;p&gt;At this stage &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Sample ordered list&lt;/li&gt;
-  &lt;li&gt;List item &lt;/li&gt;
-  &lt;li&gt;Another list item&lt;/li&gt;
+  &lt;li&gt;Github&lt;/li&gt;
+  &lt;li&gt;A &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/DTRG/05+Deploying+to+Dev&quot;&gt;development environment&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This will allow your developers to push their working code to an environment representative of the real world. The Development environment will contain up to date microservices from other teams,test instances of the Aspire head of duty systems, as well as government gateway and IDA. &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A QA environment&lt;/li&gt;
+  &lt;li&gt;A staging environment&lt;/li&gt;
+  &lt;li&gt;Tooling&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h4 id=&quot;h4-heading-looks-like-this&quot;&gt;H4 Heading Looks Like This&lt;/h4&gt;
@@ -63,18 +69,41 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
-        <link>http://d728ue.github.io/Lorem-Ipsum-Dolor/</link>
-        <guid isPermaLink="true">http://d728ue.github.io/Lorem-Ipsum-Dolor/</guid>
+        <pubDate>Tue, 01 Apr 2014 00:00:00 +0100</pubDate>
+        <link>http://d728ue.github.io/Alpha%20assessment/</link>
+        <guid isPermaLink="true">http://d728ue.github.io/Alpha%20assessment/</guid>
       </item>
     
       <item>
-        <title>Another Project Title</title>
-        <description>&lt;h2 id=&quot;h2-heading-looks-like-this&quot;&gt;H2 Heading Looks Like This&lt;/h2&gt;
+        <title>Beta assessment</title>
+        <description>&lt;h2 id=&quot;beta-assessment&quot;&gt;Beta assessment&lt;/h2&gt;
 
 &lt;p&gt;Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. &lt;/p&gt;
 
-&lt;h3 id=&quot;h3-heading-looks-like-this&quot;&gt;H3 Heading Looks Like This&lt;/h3&gt;
+&lt;h3 id=&quot;testing-and-development&quot;&gt;Testing and development&lt;/h3&gt;
+
+&lt;h3 id=&quot;h4-heading-looks-like-this&quot;&gt;H4 Heading Looks Like This&lt;/h3&gt;
+
+&lt;p&gt;Corned beef pig pancetta drumstick tail, andouille spare ribs jowl prosciutto biltong hamburger short loin pork brisket. Frankfurter kielbasa brisket meatloaf pastrami fatback. Cow t-bone pork chop chuck short ribs spare ribs. Pancetta flank porchetta, turkey tail ball tip tri-tip leberkas beef.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a sample blockquote. Landjaeger shoulder ham capicola. 
+Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon kevin turducken spare ribs sirloin short ribs ham hock.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+        <link>http://d728ue.github.io/Beta-assessment/</link>
+        <guid isPermaLink="true">http://d728ue.github.io/Beta-assessment/</guid>
+      </item>
+    
+      <item>
+        <title>Live assessment</title>
+        <description>&lt;h2 id=&quot;live-assessment&quot;&gt;Live assessment&lt;/h2&gt;
+
+&lt;p&gt;Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. &lt;/p&gt;
+
+&lt;h3 id=&quot;testing-and-development&quot;&gt;Testing and development&lt;/h3&gt;
 
 &lt;p&gt;Spare ribs strip steak pastrami corned beef bresaola porchetta. Cow fatback tongue prosciutto, short ribs hamburger drumstick beef ribs swine t-bone pancetta meatball strip steak ground round tenderloin.&lt;/p&gt;
 
@@ -95,39 +124,8 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 
 </description>
         <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
-        <link>http://d728ue.github.io/Another-Project-Title/</link>
-        <guid isPermaLink="true">http://d728ue.github.io/Another-Project-Title/</guid>
-      </item>
-    
-      <item>
-        <title>Hello World</title>
-        <description>&lt;h2 id=&quot;h2-heading-looks-like-this&quot;&gt;H2 Heading Looks Like This&lt;/h2&gt;
-
-&lt;p&gt;Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. &lt;/p&gt;
-
-&lt;h3 id=&quot;h3-heading-looks-like-this&quot;&gt;H3 Heading Looks Like This&lt;/h3&gt;
-
-&lt;p&gt;Spare ribs strip steak pastrami corned beef bresaola porchetta. Cow fatback tongue prosciutto, short ribs hamburger drumstick beef ribs swine t-bone pancetta meatball strip steak ground round tenderloin.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Sample ordered list&lt;/li&gt;
-  &lt;li&gt;List item &lt;/li&gt;
-  &lt;li&gt;Another list item&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;h4-heading-looks-like-this&quot;&gt;H4 Heading Looks Like This&lt;/h4&gt;
-
-&lt;p&gt;Corned beef pig pancetta drumstick tail, andouille spare ribs jowl prosciutto biltong hamburger short loin pork brisket. Frankfurter kielbasa brisket meatloaf pastrami fatback. Cow t-bone pork chop chuck short ribs spare ribs. Pancetta flank porchetta, turkey tail ball tip tri-tip leberkas beef.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This is a sample blockquote. Landjaeger shoulder ham capicola. 
-Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon kevin turducken spare ribs sirloin short ribs ham hock.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-        <link>http://d728ue.github.io/Hello-World/</link>
-        <guid isPermaLink="true">http://d728ue.github.io/Hello-World/</guid>
+        <link>http://d728ue.github.io/Live%20assessment/</link>
+        <guid isPermaLink="true">http://d728ue.github.io/Live%20assessment/</guid>
       </item>
     
   </channel>

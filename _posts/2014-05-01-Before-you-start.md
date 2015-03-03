@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Lorem Ipsum Quid Nostrud
-desc: Te nec mundi mandamus voluptatum. Adhuc nostro id sit, at erat liberavisse eum
+title: Before you start...
+desc: This is for service managers who are just setting out. It gives you a broad description of the tax platform and useful areas for more information.
 proj-url: https://github.com/femmebot/jekyll-grid
-proj-num: 03
+proj-num: 01
 ---
 
 

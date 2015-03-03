@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Hello World
-desc: Brief excerpt or project description goes here and looks like this
+title: Live assessment
+desc: This is for services whose public Beta has been a sucess and now want to remove the Beta banner and move into live
 proj-url: https://github.com/femmebot/jekyll-grid
-proj-num: 01
+proj-num: 03
 ---
 
 
 
-## H2 Heading Looks Like This
+## Live assessment
 
 Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. 
 
-### H3 Heading Looks Like This
+### Testing and development
 
 Spare ribs strip steak pastrami corned beef bresaola porchetta. Cow fatback tongue prosciutto, short ribs hamburger drumstick beef ribs swine t-bone pancetta meatball strip steak ground round tenderloin.
 
