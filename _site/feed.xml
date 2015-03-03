@@ -39,24 +39,39 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
     
       <item>
         <title>Alpha assessment</title>
-        <description>&lt;h2 id=&quot;h2-alpha-assessment&quot;&gt;H2 Alpha assessment&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;alpha-assessment&quot;&gt;Alpha assessment&lt;/h2&gt;
 
 &lt;p&gt;This page should outline what the platform offers for those services who are entering thier Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.&lt;/p&gt;
 
 &lt;h3 id=&quot;testing-and-development&quot;&gt;Testing and development&lt;/h3&gt;
 
-&lt;p&gt;At this stage &lt;/p&gt;
+&lt;p&gt;At this stage the tax platfrom gives you a number of environments to play with which offer different benefits.&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Github&lt;/li&gt;
-  &lt;li&gt;A &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/DTRG/05+Deploying+to+Dev&quot;&gt;development environment&lt;/a&gt;
+  &lt;li&gt;A &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/DTRG/05+Deploying+to+Dev&quot;&gt;development environment&lt;/a&gt; 
     &lt;ul&gt;
       &lt;li&gt;This will allow your developers to push their working code to an environment representative of the real world. The Development environment will contain up to date microservices from other teams,test instances of the Aspire head of duty systems, as well as government gateway and IDA. &lt;/li&gt;
+      &lt;li&gt;You can deploy to this environment whenever you like.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;A QA environment&lt;/li&gt;
-  &lt;li&gt;A staging environment&lt;/li&gt;
-  &lt;li&gt;Tooling&lt;/li&gt;
+  &lt;li&gt;A &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/DTRG/10+Deploying+to+Web-QA&quot;&gt;QA environment&lt;/a&gt; 
+    &lt;ul&gt;
+      &lt;li&gt;This is where your developers can push code ready for functional testing by your QA. This also has test instances of IDA, government gateway and the aspire back-end head of duty systems. You must test sucessfully here to progress to production. &lt;/li&gt;
+      &lt;li&gt;You can deploy to this environment whenever you like.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/pages/viewpage.action?title=11+Deploying+to+Staging&amp;amp;spaceKey=DTRG&quot;&gt;staging environment&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The staging environment is where we performance test services. Although though it’s not essential to performance test before a small private Beta we will demand that you at least have deployed to staging. Be prepared to work with the web-ops team in the week moving up to your first production release. &lt;/li&gt;
+      &lt;li&gt;You need web-ops to help you deploy to staging on your first deployment but after that you can deploy and test here whenever you like. &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases&quot;&gt;Production&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This is the live tax platfrom! At this stage this environment can be used to run a small private beta. There are a number of prerequisites before you are allowed to go into this environment. It’s worth reading the &lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases&quot;&gt;step by step guide to production releases&lt;/a&gt; now. Once you have met all these prerequisites you can deploy to production. &lt;/li&gt;
+      &lt;li&gt;For your initial deployment it’s best to raise a PRODREL ticket in Jira as a placeholder as soon as possible (you can’t be too early!). After this initial deployment you can use the &lt;a href=&quot;https://releaseform.tax.service.gov.uk/&quot;&gt;release form&lt;/a&gt; which will allow you to relesae with 48 hours notice. &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h4 id=&quot;h4-heading-looks-like-this&quot;&gt;H4 Heading Looks Like This&lt;/h4&gt;

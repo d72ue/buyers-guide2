@@ -45,24 +45,39 @@
 
 
   <div class="entry">
-    <h2 id="h2-alpha-assessment">H2 Alpha assessment</h2>
+    <h2 id="alpha-assessment">Alpha assessment</h2>
 
 <p>This page should outline what the platform offers for those services who are entering thier Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.</p>
 
 <h3 id="testing-and-development">Testing and development</h3>
 
-<p>At this stage </p>
+<p>At this stage the tax platfrom gives you a number of environments to play with which offer different benefits.</p>
 
 <ol>
-  <li>Github</li>
-  <li>A <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/05+Deploying+to+Dev">development environment</a>
+  <li>A <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/05+Deploying+to+Dev">development environment</a> 
     <ul>
       <li>This will allow your developers to push their working code to an environment representative of the real world. The Development environment will contain up to date microservices from other teams,test instances of the Aspire head of duty systems, as well as government gateway and IDA. </li>
+      <li>You can deploy to this environment whenever you like.</li>
     </ul>
   </li>
-  <li>A QA environment</li>
-  <li>A staging environment</li>
-  <li>Tooling</li>
+  <li>A <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/10+Deploying+to+Web-QA">QA environment</a> 
+    <ul>
+      <li>This is where your developers can push code ready for functional testing by your QA. This also has test instances of IDA, government gateway and the aspire back-end head of duty systems. You must test sucessfully here to progress to production. </li>
+      <li>You can deploy to this environment whenever you like.</li>
+    </ul>
+  </li>
+  <li>A <a href="https://confluence.tools.tax.service.gov.uk/pages/viewpage.action?title=11+Deploying+to+Staging&amp;spaceKey=DTRG">staging environment</a>
+    <ul>
+      <li>The staging environment is where we performance test services. Although though it’s not essential to performance test before a small private Beta we will demand that you at least have deployed to staging. Be prepared to work with the web-ops team in the week moving up to your first production release. </li>
+      <li>You need web-ops to help you deploy to staging on your first deployment but after that you can deploy and test here whenever you like. </li>
+    </ul>
+  </li>
+  <li><a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">Production</a>
+    <ul>
+      <li>This is the live tax platfrom! At this stage this environment can be used to run a small private beta. There are a number of prerequisites before you are allowed to go into this environment. It’s worth reading the <a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">step by step guide to production releases</a> now. Once you have met all these prerequisites you can deploy to production. </li>
+      <li>For your initial deployment it’s best to raise a PRODREL ticket in Jira as a placeholder as soon as possible (you can’t be too early!). After this initial deployment you can use the <a href="https://releaseform.tax.service.gov.uk/">release form</a> which will allow you to relesae with 48 hours notice. </li>
+    </ul>
+  </li>
 </ol>
 
 <h4 id="h4-heading-looks-like-this">H4 Heading Looks Like This</h4>
