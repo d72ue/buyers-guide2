@@ -10,17 +10,33 @@ proj-num: 04
 
 ## Beta assessment
 
-The move from Alpha phase to Beta phase in HMRC has traditionally been a move from a small private Beta to a public Beta where the number of customers able to use the service is not artifically controlled. If your transition does not fit this model then I suggest that you read the buyers guide introduction to [Alpha assessment][alpha assessment]
+The move from Alpha phase to Beta phase in HMRC has traditionally been a move from a small private Beta to a public Beta where the number of customers able to use the service is not artifically controlled. If your transition does not fit this model then I suggest that you read the buyers guide introduction to [Alpha assessment][alpha assessment]. 
 
-### Testing and development 
+If you are transitioning from private beta to public beta you will find the offering much the same as the baseline for private beta but with a few more extras in terms of online support. 
+
+### Live Support
+
+Due to the crital nature of Beta services to HMRC's users the live support level surrounding these services is higher than what you would expect from private Beta. We will always attempt to keep your service running out of hours but when you move into public Beta we can offer these extras: 
+* Your own team within Pagerduty allowing your team members to be contacted if your service shows an app exception
+* Scripted user testing (providing you can supply the test user)
+* enhanced support around key business events (tax deadlines etc...)
+
+### Customer Support
+
+Many services that have moved into public Beta have required an enhanced level of customer support involving additional tax specialist teams to answer queries. This can be organised with the Customer Support team: 
+
+  <andrew.sheppard@digital.hmrc.gov.uk> 07979707726
+
+  <alexander.brown@digital.hmrc.gov.uk> 07500789508
+
+#### Remember if you need anything in addition to this baseline then please let us know...
+<tim.britten@digital.hmrc.gov.uk>
+
+<kalbir.sohi@digital.hmrc.gov.uk>
 
 
-### H4 Heading Looks Like This
 
-Corned beef pig pancetta drumstick tail, andouille spare ribs jowl prosciutto biltong hamburger short loin pork brisket. Frankfurter kielbasa brisket meatloaf pastrami fatback. Cow t-bone pork chop chuck short ribs spare ribs. Pancetta flank porchetta, turkey tail ball tip tri-tip leberkas beef.
 
-> This is a sample blockquote. Landjaeger shoulder ham capicola. 
-> Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon kevin turducken spare ribs sirloin short ribs ham hock.
 
 
 

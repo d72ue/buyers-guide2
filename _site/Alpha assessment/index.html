@@ -77,7 +77,7 @@
   </li>
 </ul>
 
-<h3 id="continuous-deployment">Continuous Deployment</h3>
+<h3 id="continuous-deployment">Continuous deployment</h3>
 <ul>
   <li><a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">Production deployments</a>
     <ul>
@@ -124,13 +124,13 @@
 
 <p>Web-ops use these same tools to monitor the platform infrastructure as your team use to monitor your service. </p>
 
-<h3 id="incident-response">Incident response</h3>
+<h3 id="incident-support">Incident support</h3>
 
 <p>Once you have deployed onto the tax platform and you have your monitoring set up your service will be supported both in and out of hours by the web-operations team. We supply a dedicated engineer and on-call service manager 24/7/365 who will respond to any monitoring alerts of escalation from customer support. </p>
 
 <p>During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endeavour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the <a href="https://groups.google.com/a/digital.hmrc.gov.uk/forum/#!forum/ddc-tax-plat-live-ops-announcements">live service announcements email</a>.</p>
 
-<h3 id="customer-support">Customer Support</h3>
+<h3 id="customer-support">Customer support</h3>
 
 <p>The tax platform also comes with its own customer support service. This is built using a tool called Deskpro. It allows customers to submit support requests as well as feedback. These tickets are then responded to by a tax platform customer support team and supporting expert tax teams. The responses are delivered by email. </p>
 
@@ -145,10 +145,22 @@
 <p>There are different levels of resilience built into the tax platform which provide resilience against disaster and fairly rapid disaster recovery. These levels are outlined below:</p>
 
 <ul>
-  <li>Data centre</li>
+  <li>Data-centre level
+    <ul>
+      <li>The tax platform’s Internet facing (il2) infrastructure is currently run in an active/passive arrangement across two data-centres. This means that if we were to lose one data-centre we could fail over to our second data centre. Customers would be affected by this fail over but we would be operational again within 30 minutes. </li>
+      <li>The tax platform’s PSN facing (il3) infrastructure is configured in active/active arrangement across two data-centres. This means that if a data-centre went down that micro-services in this area would continue to run without any impact to customers.</li>
+    </ul>
+  </li>
+  <li>Application server level 
+    <ul>
+      <li>Multiple instances of your micro-services will be run across different application servers with traffic load balanced across the these instances. </li>
+      <li>If one of these instances fails suddenly all traffic will be load balanced across to the remaining instances of that microservice. The tax platform will also respond by monitoring the web-operations team in order that they can resurrect the application server that has died.</li>
+      <li>If traffic increases towards a volume we deem dangerous for the current infrastructure monitoring will alert the web-operations team and more application servers/instances of your application will be added to the tax platform to cope with that traffic. </li>
+    </ul>
+  </li>
 </ul>
 
-<h4 id="remember-if-you-have-a-need-that-they-platform-currently-doesnt-meet-please-get-in-touch">Remember, if you have a need that they platform currently doesn’t meet please get in touch…</h4>
+<h4 id="remember-if-you-have-a-need-that-the-platform-currently-doesnt-meet-please-get-in-touch">Remember, if you have a need that the platform currently doesn’t meet please get in touch…</h4>
 <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#116;&#105;&#109;&#046;&#098;&#114;&#105;&#116;&#116;&#101;&#110;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">&#116;&#105;&#109;&#046;&#098;&#114;&#105;&#116;&#116;&#101;&#110;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;</a></p>
 
 <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#107;&#097;&#108;&#098;&#105;&#114;&#046;&#115;&#111;&#104;&#105;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">&#107;&#097;&#108;&#098;&#105;&#114;&#046;&#115;&#111;&#104;&#105;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#104;&#109;&#114;&#099;&#046;&#103;&#111;&#118;&#046;&#117;&#107;</a></p>

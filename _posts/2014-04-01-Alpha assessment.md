@@ -37,7 +37,7 @@ At this stage the tax platform gives you a number of environments to play with, 
 	* The staging environment is where we performance test services. Although though it's not essential to performance test before a small private Beta we will demand that you at least have deployed to staging. Be prepared to work with the web-ops team in the week moving up to your first production release. 
 	* You need web-ops to help you deploy to staging on your first deployment but after that you can deploy and test here whenever you like.   
 
-### Continuous Deployment
+### Continuous deployment
 * [Production deployments][step by step guide]
 	* This is the customer facing tax platform! At this stage this environment can be used to run a small private beta. There are a number of prerequisites before you are allowed to go into this environment. It's worth reading the [step by step guide to production releases][step by step guide] now. Once you have met all these prerequisites you can deploy to production. 
 	* For your initial deployment it's best to raise a PRODREL ticket in Jira as a placeholder as soon as possible (you can't be too early!). After this initial deployment you can use the [release form][release form] which will allow you to release with 48 hours notice.
@@ -66,13 +66,13 @@ The tax platform provides a number of tools and mechanisms that your service can
 
 Web-ops use these same tools to monitor the platform infrastructure as your team use to monitor your service. 
 
-### Incident response
+### Incident support
 
 Once you have deployed onto the tax platform and you have your monitoring set up your service will be supported both in and out of hours by the web-operations team. We supply a dedicated engineer and on-call service manager 24/7/365 who will respond to any monitoring alerts of escalation from customer support. 
 
 During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endeavour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the [live service announcements email][announcements].
 
-### Customer Support
+### Customer support
 
 The tax platform also comes with its own customer support service. This is built using a tool called Deskpro. It allows customers to submit support requests as well as feedback. These tickets are then responded to by a tax platform customer support team and supporting expert tax teams. The responses are delivered by email. 
 
@@ -86,10 +86,17 @@ The tools team in London look after this service and can assist you in understan
 
 There are different levels of resilience built into the tax platform which provide resilience against disaster and fairly rapid disaster recovery. These levels are outlined below:
 
-* Data centre
+* Data-centre level
+	* The tax platform's Internet facing (il2) infrastructure is currently run in an active/passive arrangement across two data-centres. This means that if we were to lose one data-centre we could fail over to our second data centre. Customers would be affected by this fail over but we would be operational again within 30 minutes. 
+	* The tax platform's PSN facing (il3) infrastructure is configured in active/active arrangement across two data-centres. This means that if a data-centre went down that micro-services in this area would continue to run without any impact to customers.
+* Application server level 
+	* Multiple instances of your micro-services will be run across different application servers with traffic load balanced across the these instances. 
+	* If one of these instances fails suddenly all traffic will be load balanced across to the remaining instances of that microservice. The tax platform will also respond by monitoring the web-operations team in order that they can resurrect the application server that has died.
+	* If traffic increases towards a volume we deem dangerous for the current infrastructure monitoring will alert the web-operations team and more application servers/instances of your application will be added to the tax platform to cope with that traffic. 
 
 
-#### Remember, if you have a need that they platform currently doesn't meet please get in touch...
+
+#### Remember, if you have a need that the platform currently doesn't meet please get in touch...
 <tim.britten@digital.hmrc.gov.uk>
 
 <kalbir.sohi@digital.hmrc.gov.uk>

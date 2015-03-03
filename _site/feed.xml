@@ -8,28 +8,9 @@
     
       <item>
         <title>Before you start...</title>
-        <description>&lt;h2 id=&quot;h2-heading-looks-like-this&quot;&gt;H2 Heading Looks Like This&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;i-havent-gotten-round-to-writing-this-yet&quot;&gt;I haven’t gotten round to writing this yet….!!!&lt;/h2&gt;
 
-&lt;p&gt;Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. &lt;/p&gt;
-
-&lt;h3 id=&quot;h3-heading-looks-like-this&quot;&gt;H3 Heading Looks Like This&lt;/h3&gt;
-
-&lt;p&gt;Spare ribs strip steak pastrami corned beef bresaola porchetta. Cow fatback tongue prosciutto, short ribs hamburger drumstick beef ribs swine t-bone pancetta meatball strip steak ground round tenderloin.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Sample ordered list&lt;/li&gt;
-  &lt;li&gt;List item &lt;/li&gt;
-  &lt;li&gt;Another list item&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;h4-heading-looks-like-this&quot;&gt;H4 Heading Looks Like This&lt;/h4&gt;
-
-&lt;p&gt;Corned beef pig pancetta drumstick tail, andouille spare ribs jowl prosciutto biltong hamburger short loin pork brisket. Frankfurter kielbasa brisket meatloaf pastrami fatback. Cow t-bone pork chop chuck short ribs spare ribs. Pancetta flank porchetta, turkey tail ball tip tri-tip leberkas beef.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This is a sample blockquote. Landjaeger shoulder ham capicola. 
-Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon kevin turducken spare ribs sirloin short ribs ham hock.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Don’t worry I will!&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 01 May 2014 00:00:00 +0100</pubDate>
@@ -72,7 +53,7 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;continuous-deployment&quot;&gt;Continuous Deployment&lt;/h3&gt;
+&lt;h3 id=&quot;continuous-deployment&quot;&gt;Continuous deployment&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases&quot;&gt;Production deployments&lt;/a&gt;
     &lt;ul&gt;
@@ -119,13 +100,13 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 
 &lt;p&gt;Web-ops use these same tools to monitor the platform infrastructure as your team use to monitor your service. &lt;/p&gt;
 
-&lt;h3 id=&quot;incident-response&quot;&gt;Incident response&lt;/h3&gt;
+&lt;h3 id=&quot;incident-support&quot;&gt;Incident support&lt;/h3&gt;
 
 &lt;p&gt;Once you have deployed onto the tax platform and you have your monitoring set up your service will be supported both in and out of hours by the web-operations team. We supply a dedicated engineer and on-call service manager 24/7/365 who will respond to any monitoring alerts of escalation from customer support. &lt;/p&gt;
 
 &lt;p&gt;During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endeavour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the &lt;a href=&quot;https://groups.google.com/a/digital.hmrc.gov.uk/forum/#!forum/ddc-tax-plat-live-ops-announcements&quot;&gt;live service announcements email&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;customer-support&quot;&gt;Customer Support&lt;/h3&gt;
+&lt;h3 id=&quot;customer-support&quot;&gt;Customer support&lt;/h3&gt;
 
 &lt;p&gt;The tax platform also comes with its own customer support service. This is built using a tool called Deskpro. It allows customers to submit support requests as well as feedback. These tickets are then responded to by a tax platform customer support team and supporting expert tax teams. The responses are delivered by email. &lt;/p&gt;
 
@@ -140,10 +121,22 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
 &lt;p&gt;There are different levels of resilience built into the tax platform which provide resilience against disaster and fairly rapid disaster recovery. These levels are outlined below:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Data centre&lt;/li&gt;
+  &lt;li&gt;Data-centre level
+    &lt;ul&gt;
+      &lt;li&gt;The tax platform’s Internet facing (il2) infrastructure is currently run in an active/passive arrangement across two data-centres. This means that if we were to lose one data-centre we could fail over to our second data centre. Customers would be affected by this fail over but we would be operational again within 30 minutes. &lt;/li&gt;
+      &lt;li&gt;The tax platform’s PSN facing (il3) infrastructure is configured in active/active arrangement across two data-centres. This means that if a data-centre went down that micro-services in this area would continue to run without any impact to customers.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Application server level 
+    &lt;ul&gt;
+      &lt;li&gt;Multiple instances of your micro-services will be run across different application servers with traffic load balanced across the these instances. &lt;/li&gt;
+      &lt;li&gt;If one of these instances fails suddenly all traffic will be load balanced across to the remaining instances of that microservice. The tax platform will also respond by monitoring the web-operations team in order that they can resurrect the application server that has died.&lt;/li&gt;
+      &lt;li&gt;If traffic increases towards a volume we deem dangerous for the current infrastructure monitoring will alert the web-operations team and more application servers/instances of your application will be added to the tax platform to cope with that traffic. &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;remember-if-you-have-a-need-that-they-platform-currently-doesnt-meet-please-get-in-touch&quot;&gt;Remember, if you have a need that they platform currently doesn’t meet please get in touch…&lt;/h4&gt;
+&lt;h4 id=&quot;remember-if-you-have-a-need-that-the-platform-currently-doesnt-meet-please-get-in-touch&quot;&gt;Remember, if you have a need that the platform currently doesn’t meet please get in touch…&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#107;&amp;#097;&amp;#108;&amp;#098;&amp;#105;&amp;#114;&amp;#046;&amp;#115;&amp;#111;&amp;#104;&amp;#105;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#107;&amp;#097;&amp;#108;&amp;#098;&amp;#105;&amp;#114;&amp;#046;&amp;#115;&amp;#111;&amp;#104;&amp;#105;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt;&lt;/p&gt;
@@ -158,18 +151,29 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
         <title>Beta assessment</title>
         <description>&lt;h2 id=&quot;beta-assessment&quot;&gt;Beta assessment&lt;/h2&gt;
 
-&lt;p&gt;The move from Alpha phase to Beta phase in HMRC has traditionally been a move from a small private Beta to a public Beta where the number of customers able to use the service is not artifically controlled. If your transition does not fit this model then I suggest that you read the buyers guide introduction to &lt;a href=&quot;/buyers-guide2/Alpha%20assessment/&quot;&gt;Alpha assessment&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The move from Alpha phase to Beta phase in HMRC has traditionally been a move from a small private Beta to a public Beta where the number of customers able to use the service is not artifically controlled. If your transition does not fit this model then I suggest that you read the buyers guide introduction to &lt;a href=&quot;/buyers-guide2/Alpha%20assessment/&quot;&gt;Alpha assessment&lt;/a&gt;. &lt;/p&gt;
 
-&lt;h3 id=&quot;testing-and-development&quot;&gt;Testing and development&lt;/h3&gt;
+&lt;p&gt;If you are transitioning from private beta to public beta you will find the offering much the same as the baseline for private beta but with a few more extras in terms of online support. &lt;/p&gt;
 
-&lt;h3 id=&quot;h4-heading-looks-like-this&quot;&gt;H4 Heading Looks Like This&lt;/h3&gt;
+&lt;h3 id=&quot;live-support&quot;&gt;Live Support&lt;/h3&gt;
 
-&lt;p&gt;Corned beef pig pancetta drumstick tail, andouille spare ribs jowl prosciutto biltong hamburger short loin pork brisket. Frankfurter kielbasa brisket meatloaf pastrami fatback. Cow t-bone pork chop chuck short ribs spare ribs. Pancetta flank porchetta, turkey tail ball tip tri-tip leberkas beef.&lt;/p&gt;
+&lt;p&gt;Due to the crital nature of Beta services to HMRC’s users the live support level surrounding these services is higher than what you would expect from private Beta. We will always attempt to keep your service running out of hours but when you move into public Beta we can offer these extras: 
+* Your own team within Pagerduty allowing your team members to be contacted if your service shows an app exception
+* Scripted user testing (providing you can supply the test user)
+* enhanced support around key business events (tax deadlines etc…)&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;This is a sample blockquote. Landjaeger shoulder ham capicola. 
-Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon kevin turducken spare ribs sirloin short ribs ham hock.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&quot;customer-support&quot;&gt;Customer Support&lt;/h3&gt;
+
+&lt;p&gt;Many services that have moved into public Beta have required an enhanced level of customer support involving additional tax specialist teams to answer queries. This can be organised with the Customer Support team: &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#110;&amp;#100;&amp;#114;&amp;#101;&amp;#119;&amp;#046;&amp;#115;&amp;#104;&amp;#101;&amp;#112;&amp;#112;&amp;#097;&amp;#114;&amp;#100;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#097;&amp;#110;&amp;#100;&amp;#114;&amp;#101;&amp;#119;&amp;#046;&amp;#115;&amp;#104;&amp;#101;&amp;#112;&amp;#112;&amp;#097;&amp;#114;&amp;#100;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt; 07979707726&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#097;&amp;#110;&amp;#100;&amp;#101;&amp;#114;&amp;#046;&amp;#098;&amp;#114;&amp;#111;&amp;#119;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#097;&amp;#110;&amp;#100;&amp;#101;&amp;#114;&amp;#046;&amp;#098;&amp;#114;&amp;#111;&amp;#119;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt; 07500789508&lt;/p&gt;
+
+&lt;h4 id=&quot;remember-if-you-need-anything-in-addition-to-this-baseline-then-please-let-us-know&quot;&gt;Remember if you need anything in addition to this baseline then please let us know…&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#107;&amp;#097;&amp;#108;&amp;#098;&amp;#105;&amp;#114;&amp;#046;&amp;#115;&amp;#111;&amp;#104;&amp;#105;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#107;&amp;#097;&amp;#108;&amp;#098;&amp;#105;&amp;#114;&amp;#046;&amp;#115;&amp;#111;&amp;#104;&amp;#105;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
@@ -179,28 +183,27 @@ Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon ke
     
       <item>
         <title>Live assessment</title>
-        <description>&lt;h2 id=&quot;live-assessment&quot;&gt;Live assessment&lt;/h2&gt;
+        <description>&lt;p&gt;Once you get to live assessment you will have been running a fully functioning service for a while. By this stage you will have iterated on your service until it is ready for live. There is not much else the platform can offer you more than the perks you will have already experience. However with the transition from Beta to Live comes a greater expectation from our users and the tax platform can offer the following to help you meet these expectations…&lt;/p&gt;
 
-&lt;p&gt;Sample paragraph goes here and looks like this. Bacon ipsum dolor sit amet turducken meatloaf boudin pork loin meatball biltong, fatback capicola turkey pork chop. Short ribs boudin landjaeger kevin brisket ground round. &lt;/p&gt;
+&lt;h3 id=&quot;dynamic-response-to-increasing-volume&quot;&gt;Dynamic response to increasing volume&lt;/h3&gt;
 
-&lt;h3 id=&quot;testing-and-development&quot;&gt;Testing and development&lt;/h3&gt;
+&lt;p&gt;We understand that live services need to be prepared to take sudden and unexpected increases in volume without issue. Therefore we have developed the tax platform in a way which enables us to scale at speed in response to these events. &lt;/p&gt;
 
-&lt;p&gt;Spare ribs strip steak pastrami corned beef bresaola porchetta. Cow fatback tongue prosciutto, short ribs hamburger drumstick beef ribs swine t-bone pancetta meatball strip steak ground round tenderloin.&lt;/p&gt;
+&lt;p&gt;Currently we run n+1 instances of your micro-service where n = “the number of micro-services that can take the expected traffic”. We will never load more than one instance of a micro-service to an application server, the app server/micro-service relationship can only be 1:1 or 1:0. We will also always have additional app servers in the 1:0 relationship ready to support additional instances of your micro-services if n increases: &lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Sample ordered list&lt;/li&gt;
-  &lt;li&gt;List item &lt;/li&gt;
-  &lt;li&gt;Another list item&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;/buyers-guide2/images/infrastructure scaling before.jpg&quot; alt=&quot;Constructocat by https://github.com/jasoncostello&quot; style=&quot;width: 600px;&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;h4-heading-looks-like-this&quot;&gt;H4 Heading Looks Like This&lt;/h4&gt;
+&lt;p&gt;If actual traffic increases n will also, therefore the platform must respond by building more micro-service instances. Monitoring and alerting will make the web-operations team aware that n has increased and they will respond by changing the expected state of the tax platform to include more instances of the required app. Once this change has been made the platform will respond by building new instances of the app on the remaining micro-services. Increasing the number of instances of an app takes minutes.&lt;/p&gt;
 
-&lt;p&gt;Corned beef pig pancetta drumstick tail, andouille spare ribs jowl prosciutto biltong hamburger short loin pork brisket. Frankfurter kielbasa brisket meatloaf pastrami fatback. Cow t-bone pork chop chuck short ribs spare ribs. Pancetta flank porchetta, turkey tail ball tip tri-tip leberkas beef.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/buyers-guide2/images/infrastructure scaling after.jpg&quot; alt=&quot;Constructocat by https://github.com/jasoncostello&quot; style=&quot;width: 600px;&quot; /&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;This is a sample blockquote. Landjaeger shoulder ham capicola. 
-Pork shoulder fatback, flank pork belly rump short loin meatloaf filet mignon kevin turducken spare ribs sirloin short ribs ham hock.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The total number of micro-services is determined by keeping our ability to scale the number of any micro-service. This ensures that we can always scale. If we approach the situation whereby we cannot add instances of a micro-service without using a 1:2 app server to micro-service ratio we will increase the number of application servers. Increasing the number of app servers is not automated to the same degree as increasing micro-service instances and can take an hour. We are currently working on automating this process. &lt;/p&gt;
+
+&lt;h3 id=&quot;operational-testing&quot;&gt;Operational testing&lt;/h3&gt;
+
+&lt;p&gt;One of the key things to establish is how the tax platform responds to the incidents which effect the live service. Through testing and public beta you will have experienced the process which occurs when there is a live incident. However once a service is live the platform understand that different teams will require different responses from the web-operations team in live. &lt;/p&gt;
+
+&lt;p&gt;Therefore before going to live we suggest that we run a live service incident management exercise. To arrange this exercise please contact &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&quot;&gt;&amp;#116;&amp;#105;&amp;#109;&amp;#046;&amp;#098;&amp;#114;&amp;#105;&amp;#116;&amp;#116;&amp;#101;&amp;#110;&amp;#064;&amp;#100;&amp;#105;&amp;#103;&amp;#105;&amp;#116;&amp;#097;&amp;#108;&amp;#046;&amp;#104;&amp;#109;&amp;#114;&amp;#099;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#117;&amp;#107;&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
