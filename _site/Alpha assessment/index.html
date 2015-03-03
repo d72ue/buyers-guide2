@@ -40,45 +40,88 @@
       <div id="main" role="main" class="container">
         <article class="post">
   <h1>Alpha assessment</h1>
-  <a href="https://github.io/buyers-guide2" class="large-link" target="_blank">View Project Site <i class="fa fa-external-link"></i></a> 
-  <div class="date">Posted April  1, 2014</div>
 
 
   <div class="entry">
-    <h2 id="alpha-assessment">Alpha assessment</h2>
-
-<p>This page should outline what the platform offers for those services who are entering thier Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.</p>
+    <p>This page should outline what the platform offers for those services who are entering thier Alpha stage after Discovery. I would suggest reading this at the beginning of the Alpha stage but also it will have information that you will find useful before you go to your Alpha assessment.</p>
 
 <h3 id="testing-and-development">Testing and development</h3>
 
-<p>At this stage the tax platfrom gives you a number of environments to play with which offer different benefits.</p>
+<p>At this stage the tax platform gives you a number of environments to play with, each offering different benefits.</p>
 
-<ol>
+<ul>
   <li>A <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/05+Deploying+to+Dev">development environment</a> 
     <ul>
-      <li>This will allow your developers to push their working code to an environment representative of the real world. The Development environment will contain up to date microservices from other teams,test instances of the Aspire head of duty systems, as well as government gateway and IDA. </li>
-      <li>You can deploy to this environment whenever you like.</li>
+      <li>This will allow your developers to push their working code to an environment representative of the real world. The Development environment will contain up to date microservices from other teams, test instances of the Aspire head of duty systems, as well as government gateway and IDA. </li>
+      <li>You can deploy to this environment whenever you like.   </li>
     </ul>
   </li>
   <li>A <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/10+Deploying+to+Web-QA">QA environment</a> 
     <ul>
       <li>This is where your developers can push code ready for functional testing by your QA. This also has test instances of IDA, government gateway and the aspire back-end head of duty systems. You must test sucessfully here to progress to production. </li>
-      <li>You can deploy to this environment whenever you like.</li>
+      <li>You can deploy to this environment whenever you like.   </li>
     </ul>
   </li>
   <li>A <a href="https://confluence.tools.tax.service.gov.uk/pages/viewpage.action?title=11+Deploying+to+Staging&amp;spaceKey=DTRG">staging environment</a>
     <ul>
       <li>The staging environment is where we performance test services. Although though it’s not essential to performance test before a small private Beta we will demand that you at least have deployed to staging. Be prepared to work with the web-ops team in the week moving up to your first production release. </li>
-      <li>You need web-ops to help you deploy to staging on your first deployment but after that you can deploy and test here whenever you like. </li>
+      <li>You need web-ops to help you deploy to staging on your first deployment but after that you can deploy and test here whenever you like.   </li>
     </ul>
   </li>
-  <li><a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">Production</a>
+</ul>
+
+<h3 id="continuous-deployment">Continuous Deployment</h3>
+<ul>
+  <li><a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">Production deployments</a>
     <ul>
-      <li>This is the live tax platfrom! At this stage this environment can be used to run a small private beta. There are a number of prerequisites before you are allowed to go into this environment. It’s worth reading the <a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">step by step guide to production releases</a> now. Once you have met all these prerequisites you can deploy to production. </li>
-      <li>For your initial deployment it’s best to raise a PRODREL ticket in Jira as a placeholder as soon as possible (you can’t be too early!). After this initial deployment you can use the <a href="https://releaseform.tax.service.gov.uk/">release form</a> which will allow you to relesae with 48 hours notice. </li>
+      <li>This is the customer facing tax platfrom! At this stage this environment can be used to run a small private beta. There are a number of prerequisites before you are allowed to go into this environment. It’s worth reading the <a href="https://confluence.tools.tax.service.gov.uk/display/WEBOPS/Step+by+Step+Guide+to+Production+Releases">step by step guide to production releases</a> now. Once you have met all these prerequisites you can deploy to production. </li>
+      <li>For your initial deployment it’s best to raise a PRODREL ticket in Jira as a placeholder as soon as possible (you can’t be too early!). After this initial deployment you can use the <a href="https://releaseform.tax.service.gov.uk/">release form</a> which will allow you to release with 48 hours notice.</li>
+      <li>Don’t forget that you will have to go through a <a href="https://confluence.tools.tax.service.gov.uk/display/DTRG/Platform+Readiness+Assessment">performance readiness review</a>.</li>
     </ul>
   </li>
-</ol>
+</ul>
+
+<h3 id="security">Security</h3>
+<p>While it will be your responsibility as a team to get your service accredited through the standard RMAD process the tax platform is regularly penetration tested and its acrreditation updated. This means if you only have to worry about your application and not about the infrastructure that your service runs on. There are number of proactive security measures we take as a platform team to ensure the protection of our customers.</p>
+
+<ul>
+  <li>The platform infrastrcuture is penetration tested every 6 months or upon any architectual change outside the scope of the existing RMADS</li>
+  <li>The platform RMADS are updated every 6 months or upon any functional change which would affect security </li>
+  <li>Akamai is in place to provide DDOS protection.</li>
+</ul>
+
+<h3 id="monitoring">Monitoring</h3>
+
+<p>The tax platform provides a number of tools and mechanisms that your service can use to monitor your service. These tools range from monitoring performance or customer satisfaction to loggin internal audit events for fraud prevention. Some of these services are free to use if you wish, others we insist on in order to enable us support your service in live. </p>
+
+<ul>
+  <li>Analytics
+    <ul>
+      <li>Google analytics is our primary analytics tools and will tell you much about customer behaviour on your service. </li>
+      <li>Deskpro, if used to support your pages, will show you which pages are generating the most support tickets, the nature of these tickets and how quickly they are being resolved.</li>
+    </ul>
+  </li>
+  <li><em>Incident Monitoring</em>
+    <ul>
+      <li>Kibana is used to log application audit events and we reply on the team to define what is important.  </li>
+      <li>Sensu alerts can then be set up from the kibana logs to alert the service team and the web-ops team when services are behaving abnormally. </li>
+      <li>Pagerduty is used to alert the out of hours support team (2 members of web-ops) if anything unusual is happening outside of office hours.</li>
+    </ul>
+  </li>
+  <li>Transaction monitoring
+    <ul>
+      <li>Splunk is used to record and interogate specific business events. It is stored in a more secure area of the tax platform (PSN facing) so that this data can contain information specific to customers. This can be used by enforcement and compliance and other business areas to understand customer behaviour. </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Web-ops use these same tools to monitor the infrastructure that your service. </p>
+
+<h3 id="incident-response">Incident response</h3>
+
+<p>Once you have deployed onto the tax platform and you have your monitoring set up your service will be supported both in and out of hours by the web-operations team. We supply a dedicated engineer and on-call service manager 24/7/365 who will respond to any monitoring alerts of esculation from customer support. </p>
+
+<p>During office hours your team will always be informed and consulted on decisions regarding the production service and we will always endevour to keep your service running. Out hours we may need to take your service down if it risks any of the other platform services but will work with you to get it fixed and back up and running the next day. We communicate these production service decisions through JIRA tickets but also announcements by the <a href="https://groups.google.com/a/digital.hmrc.gov.uk/forum/#!forum/ddc-tax-plat-live-ops-announcements">live service announcements email</a>.</p>
 
 <h4 id="h4-heading-looks-like-this">H4 Heading Looks Like This</h4>
 
